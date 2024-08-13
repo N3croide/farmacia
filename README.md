@@ -1,4 +1,4 @@
-### Tabla seleccionada: farmacy
+### Tabla seleccionada: customer
 
 ### EndPoints
 - entidad/saveEntidad
@@ -9,12 +9,23 @@
   
 ejem: 
 
-http://localhost:8080/farmacy/saveFarmacy
+http://localhost:8080/customer/saveCustomer
 
-http://localhost:8080/farmacy/deleteFarmacy/1
+{
+ "id":"1",
+ "nameCustoer":"a",
+ "lastNameCustomer":"a",
+ "emailCustomer":"emailCustomer",
+ "birthDate":"1990-05-15",
+ "longCustomer":"1",
+ "latitudCustomer":"1",
+ "city":{"id":"1"}
+}
 
-http://localhost:8080/farmacy/getFarmacy/1
+http://localhost:8080/customer/deleteCustomer/1
 
-http://localhost:8080/farmacy/updateFarmacy/1
+http://localhost:8080/customer/getCustomer/1
 
-http://localhost:8080/farmacy/allFarmacies
+http://localhost:8080/customer/updateCustomer/1
+
+http://localhost:8080/customer/allCustomer
