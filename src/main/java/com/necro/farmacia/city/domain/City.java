@@ -7,8 +7,6 @@ import com.necro.farmacia.farmacy.domain.Farmacy;
 import com.necro.farmacia.region.domain.Region;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -26,7 +24,6 @@ import lombok.NoArgsConstructor;
 public class City {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
 

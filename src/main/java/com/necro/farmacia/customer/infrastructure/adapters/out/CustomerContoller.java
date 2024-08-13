@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.necro.farmacia.customer.application.CustomerService;
@@ -19,6 +20,7 @@ import com.necro.farmacia.customer.domain.Customer;
  * CustomerContoller
  */
 @RestController
+@RequestMapping("/customer")
 public class CustomerContoller {
 
     @Autowired
