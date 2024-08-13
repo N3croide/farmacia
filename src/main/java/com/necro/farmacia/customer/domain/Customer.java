@@ -2,6 +2,8 @@ package com.necro.farmacia.customer.domain;
 
 import java.sql.Date;
 
+import com.necro.farmacia.city.domain.City;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -29,6 +31,6 @@ public class Customer {
     private Float latitudCustomer;
 
     @ManyToOne
-    private Long city;
+    private City city;
 
 }

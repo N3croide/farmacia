@@ -36,6 +36,6 @@ public class City {
     @OneToMany(mappedBy = "city")
     private List<Customer> customers;
 
-    @OneToMany
+    @OneToMany(mappedBy = "city")
     private List<Farmacy> farmacies;
 }

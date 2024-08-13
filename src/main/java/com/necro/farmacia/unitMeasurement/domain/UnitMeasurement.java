@@ -24,6 +24,6 @@ public class UnitMeasurement {
 
     private String descriptionMode;
 
-    @OneToMany(mappedBy = "codeModeAdmin")
+    @OneToMany(mappedBy = "codeUm")
     private List<Medicine> medicines;
 }

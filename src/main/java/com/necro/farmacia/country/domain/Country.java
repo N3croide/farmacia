@@ -27,6 +27,6 @@ public class Country {
     private Long id;
     private String name;
 
-    @OneToMany(mappedBy = "reigon")
+    @OneToMany(mappedBy = "country")
     private List<Region> regions;
 }

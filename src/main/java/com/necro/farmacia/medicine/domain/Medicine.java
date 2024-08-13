@@ -6,6 +6,7 @@ import com.necro.farmacia.activePrinciple.domain.ActivePrinciple;
 import com.necro.farmacia.farmacyMedicine.domain.FarmacyMedicine;
 import com.necro.farmacia.laboratory.domain.Laboratory;
 import com.necro.farmacia.modeAdministration.domain.ModeAdministration;
+import com.necro.farmacia.unitMeasurement.domain.UnitMeasurement;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -41,10 +42,10 @@ public class Medicine {
     private ActivePrinciple codeAp;
 
     @ManyToOne
-    private Integer codeUm;
+    private UnitMeasurement codeUm;
 
     @ManyToOne
-    private Laboratory codeLab;
+    private Laboratory laboratory;
 
     @OneToMany(mappedBy = "medicine")
     private List<FarmacyMedicine> farmacyMedicines;

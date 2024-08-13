@@ -24,7 +24,7 @@ public class ActivePrinciple {
     private Long id;
     private String name;
 
-    @OneToMany(mappedBy = "codeap")
+    @OneToMany(mappedBy = "codeAp")
     private List<Medicine> medicines;
 
 }
